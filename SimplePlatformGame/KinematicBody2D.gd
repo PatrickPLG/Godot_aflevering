@@ -93,11 +93,12 @@ func hit(damage):
 		get_tree().reload_current_scene()
 
 func heal(regenerate):
-	# Minusser HP med damage
+	# Plusser HP med regenerate
 	HP += regenerate
 	# Sender et signal ud som hedder HP med valuen HP
 	emit_signal("HP",HP)
-	# Hvis HP er mindre end 0 eller lig med 0
+	# Hvis HP er større end 100 eller lig med 100
 	if HP > 100 || HP == 100:
+		# Sætter HP til at være 100
 		HP = 100
 	
