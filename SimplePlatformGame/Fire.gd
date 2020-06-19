@@ -1,8 +1,14 @@
 #WorldComplete.gd
 extends Area2D
-onready var health = get_node("../Player").health
+#var health = get_node("/root/World/Player").health
+#onready var health = get_parent().get_node("/root/World/Player").health
+#var health = 100
 var timer = null
 var can_damage = true
+
+export var damage = 15
+
+onready var getPlayer = $"../Player"
 
 func _ready():
 	timer = Timer.new()
@@ -12,12 +18,12 @@ func _ready():
 	add_child(timer)
 
 func _physics_process(delta):
-	pass
+	#pass
 	var bodies = get_overlapping_bodies()
 	for body in bodies:
 		if body.name == "Player" and can_damage:
-			health = health - 5
-			print(health)
+			getPlayer.hit(damage)
+			
 			can_damage = false
 			timer.start()
 
