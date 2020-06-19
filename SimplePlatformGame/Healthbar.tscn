@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Healthbar.gd" type="Script" id=1]
 [ext_resource path="res://assets/assets/barHorizontal_green.png" type="Texture" id=2]
-[ext_resource path="res://assets/assets/barHorizontal_yellow.png" type="Texture" id=4]
+[ext_resource path="res://assets/assets/barHorizontal_red.png" type="Texture" id=3]
 
 [node name="Healthbar" type="Control"]
 anchor_right = 1.0
@@ -18,7 +18,8 @@ margin_left = -1.0
 margin_top = 1.0
 margin_right = 2041.0
 margin_bottom = 41.0
-texture_under = ExtResource( 4 )
+value = 100.0
+texture_under = ExtResource( 3 )
 texture_progress = ExtResource( 2 )
 script = ExtResource( 1 )
 __meta__ = {
