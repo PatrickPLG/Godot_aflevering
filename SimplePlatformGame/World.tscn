@@ -51,31 +51,31 @@ position = Vector2( 646.261, 258.912 )
 position = Vector2( 691.524, 256.807 )
 
 [node name="Fire8" parent="." instance=ExtResource( 9 )]
-position = Vector2( 1262.81, 62.3598 )
+position = Vector2( 1262.81, 63.3598 )
 
 [node name="Fire9" parent="." instance=ExtResource( 9 )]
-position = Vector2( 1390.93, 60.8525 )
+position = Vector2( 1390.93, 63.8525 )
 
 [node name="Fire10" parent="." instance=ExtResource( 9 )]
-position = Vector2( 1517.55, 62.3598 )
+position = Vector2( 1517.55, 63.3598 )
 
 [node name="Fire11" parent="." instance=ExtResource( 9 )]
-position = Vector2( 1647.18, 62.3598 )
+position = Vector2( 1647.18, 63.3598 )
 
 [node name="Fire12" parent="." instance=ExtResource( 9 )]
-position = Vector2( 1889.61, 188.202 )
+position = Vector2( 1889.61, 192.202 )
 
 [node name="Fire13" parent="." instance=ExtResource( 9 )]
-position = Vector2( 1928.47, 188.202 )
+position = Vector2( 1928.47, 192.202 )
 
 [node name="Fire14" parent="." instance=ExtResource( 9 )]
-position = Vector2( 1965.48, 188.202 )
+position = Vector2( 1965.48, 192.202 )
 
 [node name="Fire15" parent="." instance=ExtResource( 9 )]
-position = Vector2( 2004.35, 188.202 )
+position = Vector2( 2004.35, 192.202 )
 
 [node name="Fire16" parent="." instance=ExtResource( 9 )]
-position = Vector2( 2041.36, 188.202 )
+position = Vector2( 2041.36, 192.202 )
 
 [node name="Heart" parent="." instance=ExtResource( 7 )]
 position = Vector2( 1128.34, 126.357 )
@@ -84,7 +84,7 @@ position = Vector2( 1128.34, 126.357 )
 position = Vector2( 1739.05, 124.507 )
 
 [node name="Heart3" parent="." instance=ExtResource( 7 )]
-position = Vector2( 2090.66, 126.357 )
+position = Vector2( 2090.66, 127.357 )
 
 [node name="TIP" type="RichTextLabel" parent="."]
 margin_left = 409.0
