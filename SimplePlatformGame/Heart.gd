@@ -1,9 +1,9 @@
-#WorldComplete.gd
 extends Area2D
-var timer = null
-var can_damage = true
 
-export var damage = 15
+var timer = null
+var can_heal = true
+
+export var regenerate = 25
 
 onready var getPlayer = $"../Player"
 
@@ -15,13 +15,12 @@ func _ready():
 	add_child(timer)
 
 func _physics_process(delta):
-	#pass
 	var bodies = get_overlapping_bodies()
 	for body in bodies:
-		if body.name == "Player" and can_damage:
-			getPlayer.hit(damage)
-			can_damage = false
+		if body.name == "Player" and can_heal:
+			getPlayer.heal(regenerate)
+			can_heal = false
 			timer.start()
 
 func on_timeout_complete():
-	can_damage = true
+	can_heal = true

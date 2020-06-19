@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/barHorizontal_green.png-3afe02af9b339fc07d775c0a4843aeec.stex"
+path="res://.import/heart pixel art 254x254.png-249a8aecbd4f9deeafc7b4a75d971996.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/assets/barHorizontal_green.png"
-dest_files=[ "res://.import/barHorizontal_green.png-3afe02af9b339fc07d775c0a4843aeec.stex" ]
+source_file="res://assets/heart pixel art 254x254.png"
+dest_files=[ "res://.import/heart pixel art 254x254.png-249a8aecbd4f9deeafc7b4a75d971996.stex" ]
 
 [params]
 
