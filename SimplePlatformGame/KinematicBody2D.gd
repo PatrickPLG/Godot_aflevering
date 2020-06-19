@@ -1,20 +1,20 @@
 extends KinematicBody2D
 
+# Signaler
+signal HP
+
 # Konstante variabler
 const UP = Vector2(0, -1)
 export(int) var GRAVITY = 20
 export(int) var ACCELERATION = 50
 export(int) var MAX_SPEED = 200
 export(int) var JUMP_HEIGHT = -550
+var max_jumps = 1
+var jump_count = 0
+export var HP = 100
 
 # Varible som er lig med 2d vector
 var motion = Vector2()
-
-var max_jumps = 1
-var jump_count = 0
-
-export var HP = 100
-signal HP
 
 func _physics_process(delta):
 	# Plusser GRAVITY til Y aksen
@@ -81,11 +81,23 @@ func _physics_process(delta):
 			motion.x = lerp(motion.x, 0, 0.05)
 	motion = move_and_slide(motion, UP)
 	pass
-	if HP == 0:
-		get_tree().reload_current_scene()
 
 func hit(damage):
+	# Minusser HP med damage
 	HP -= damage
-	emit_signal("HP", HP)
-	print(HP)
-	pass
+	# Sender et signal ud som hedder HP med valuen HP
+	emit_signal("HP",HP)
+	# Hvis HP er mindre end 0 eller lig med 0
+	if HP < 0 || HP == 0:
+		# Genstarter scenen
+		get_tree().reload_current_scene()
+
+func heal(regenerate):
+	# Minusser HP med damage
+	HP += regenerate
+	# Sender et signal ud som hedder HP med valuen HP
+	emit_signal("HP",HP)
+	# Hvis HP er mindre end 0 eller lig med 0
+	if HP > 100 || HP == 100:
+		HP = 100
+	

@@ -1,14 +1,15 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Healthbar.gd" type="Script" id=1]
-[ext_resource path="res://assets/assets/barHorizontal_green.png" type="Texture" id=2]
-[ext_resource path="res://assets/assets/barHorizontal_red.png" type="Texture" id=3]
+[ext_resource path="res://assets/barHorizontal_green.png" type="Texture" id=2]
+[ext_resource path="res://assets/barHorizontal_red.png" type="Texture" id=3]
 
 [node name="Healthbar" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = -0.788902
 margin_bottom = -0.78891
+script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -21,7 +22,6 @@ margin_bottom = 41.0
 value = 100.0
 texture_under = ExtResource( 3 )
 texture_progress = ExtResource( 2 )
-script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }

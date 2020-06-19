@@ -1,14 +1,8 @@
-extends TextureProgress
+extends Node
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass
+# Henter healthbaren
+onready var barValue = $"Healthbar"
 
-
-#Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-
-
+# Når spilleren sender HP signalet opdater HealthBaren med valuen for HP
 func _on_Player_HP(HP):
-	value = HP
+	barValue.value = HP
