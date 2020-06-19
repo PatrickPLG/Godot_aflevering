@@ -19,7 +19,7 @@ margin_right = -29.0
 margin_bottom = -173.789
 
 [node name="WorldComplete" parent="." instance=ExtResource( 3 )]
-position = Vector2( 607.052, 234.907 )
+position = Vector2( 607.052, 239.907 )
 next_world = "res://World.tscn"
 
 [node name="TileMap" type="TileMap" parent="."]
