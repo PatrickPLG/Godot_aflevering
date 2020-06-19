@@ -7,6 +7,8 @@ export(int) var ACCELERATION = 50
 export(int) var MAX_SPEED = 200
 export(int) var JUMP_HEIGHT = -550
 
+export var health = 100
+
 # Varible som er lig med 2d vector
 var motion = Vector2()
 
