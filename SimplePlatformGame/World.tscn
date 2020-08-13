@@ -14,10 +14,10 @@
 position = Vector2( 78.9569, 191.403 )
 
 [node name="Healthbar" parent="Player" instance=ExtResource( 6 )]
-margin_left = -79.0895
-margin_top = -166.192
-margin_right = -79.0895
-margin_bottom = -166.192
+margin_left = -94.0895
+margin_top = -124.192
+margin_right = -94.0895
+margin_bottom = -124.192
 
 [node name="TileMap" type="TileMap" parent="."]
 show_behind_parent = true

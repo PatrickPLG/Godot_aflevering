@@ -13,10 +13,10 @@
 position = Vector2( 34, 285.851 )
 
 [node name="Healthbar" parent="Player" instance=ExtResource( 5 )]
-margin_left = -29.0
-margin_top = -173.789
-margin_right = -29.0
-margin_bottom = -173.789
+margin_left = -88.0
+margin_top = -119.789
+margin_right = -88.0
+margin_bottom = -119.789
 
 [node name="WorldComplete" parent="." instance=ExtResource( 3 )]
 position = Vector2( 607.052, 239.907 )
